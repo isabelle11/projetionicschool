@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      IONIC 4 SELECT & CROP IMAGE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+ <img src="{{imgURL}}">
+  <ion-fab vertical="bottom" horizontal="start">
+        <ion-fab-button (click)="getGallery()" color="primary">
+          <ion-icon name="image-outline"></ion-icon>
+        </ion-fab-button>
+
+  </ion-fab>
+
+  <ion-fab vertical="bottom" title="get camera" horizontal="end">
+    <ion-fab-button (click)="getCamera()" color="primary">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
